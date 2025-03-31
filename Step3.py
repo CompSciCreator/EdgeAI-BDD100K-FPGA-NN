@@ -71,7 +71,7 @@ def train_eval(dataloader, model, criterion, optimizer=None):
 
 # Training loop
 try:
-    epochs = 1
+    epochs = 10
     for epoch in range(1, epochs + 1):
         train_acc, train_loss = train_eval(train_dataloader, model, criterion, optimizer)
         log(f"Epoch {epoch}")

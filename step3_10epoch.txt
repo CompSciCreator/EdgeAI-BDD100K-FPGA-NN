@@ -1,0 +1,41 @@
+Epoch 1
+Accuracy: 32.0312
+Avg loss: 1.548507
+
+Epoch 2
+Accuracy: 34.7656
+Avg loss: 1.373895
+
+Epoch 3
+Accuracy: 39.8438
+Avg loss: 1.368793
+
+Epoch 4
+Accuracy: 40.0391
+Avg loss: 1.345109
+
+Epoch 5
+Accuracy: 37.8906
+Avg loss: 1.358140
+
+Epoch 6
+Accuracy: 38.2812
+Avg loss: 1.357887
+
+Epoch 7
+Accuracy: 38.0859
+Avg loss: 1.351944
+
+Epoch 8
+Accuracy: 40.0391
+Avg loss: 1.345999
+
+Epoch 9
+Accuracy: 36.7188
+Avg loss: 1.343719
+
+Epoch 10
+Accuracy: 38.6719
+Avg loss: 1.351665
+
+Total time: 0:02:45.702840
