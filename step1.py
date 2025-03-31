@@ -80,21 +80,25 @@ def collate_fn(batch):
     return images, targets
 
 # Paths (Modify based on dataset location) Mikes location
-IMAGE_DIR = "D:/CSI4110/Project/bdd100k/bdd100k/images/100k/train"
-LABEL_PATH = "D:/CSI4110/Project/labels/det_v2_train_release.json"
+IMAGE_DIR = "C:/Users/Kevin/CSI_4110/final-project/bdd100k/bdd100k/images/100k/train"
+LABEL_PATH = "C:/Users/Kevin/CSI_4110/final-project/labels/det_v2_train_release.json"
 
 # amount of pictures going through in one batch
-batch_size = 64
+batch_size = 8
 
 # defining transformations to convert PIL img's (an image in memory)
 # to Tensors
 transform = transforms.Compose([
+    transforms.Resize((256, 256)),  # makes images smaller & faster
     transforms.ToTensor()
 ])
 
 # Create training and test datasets with transformations
 training_data = BDD100KDetectionDataset(IMAGE_DIR, LABEL_PATH, transform=transform)
 test_data = BDD100KDetectionDataset(IMAGE_DIR, LABEL_PATH, transform=transform)
+# Limit dataset size for faster testing
+training_data.data = training_data.data[:512]
+test_data.data = test_data.data[:128]
 
 # Create DataLoaders with the custom collate function
 train_dataloader = DataLoader(training_data, batch_size=batch_size, shuffle=True, collate_fn=collate_fn)
