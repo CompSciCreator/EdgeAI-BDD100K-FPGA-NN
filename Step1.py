@@ -35,13 +35,8 @@ class BDD100KDetectionDataset(Dataset):
             #stores the image paths
             self.data.append((image_path, annotations))
 
-        # BDD100K official 10 categories
-        self.CLASSES = [
-            'pedestrian', 'rider', 'car', 'truck', 'bus', 
-            'train', 'motorcycle', 'bicycle', 'traffic light', 'traffic sign'
-        ]
 
-    # this defines our sample imgs in BDD100KDetectionDataset
+     # this defines our sample imgs in BDD100KDetectionDataset
     def __len__(self):
         return len(self.data)
 
@@ -54,7 +49,7 @@ class BDD100KDetectionDataset(Dataset):
         if self.transform:
             # If a transform (e.g., resizing, normalization, data augmentation)
             # is provided using it will be apllied to our image
-            image = self.transform(image) # Resize and normalize image
+            image = self.transform(image)
 
         # Process annotations (bounding boxes and class labels)
         boxes = []
@@ -72,7 +67,7 @@ class BDD100KDetectionDataset(Dataset):
         #returning the processed image as a tensor along with box coordinates and a label
         return image, {"boxes": torch.tensor(boxes, dtype=torch.float32), 
                         "labels": labels}
- 
+
 # Custom collate function for variable-sized data
 def collate_fn(batch):
     images = []
@@ -84,23 +79,26 @@ def collate_fn(batch):
         targets.append(target)
     return images, targets
 
-
-# Paths (Modify based on dataset location) 
-IMAGE_DIR = "/Users/andrewpaolella/desktop/final-project/BDD100k/bdd100k/bdd100k/images/100k/train"
-LABEL_PATH = "/Users/andrewpaolella/desktop/final-project/bdd100k/labels/det_v2_train_release.json"
+# Paths (Modify based on dataset location) Mikes location
+IMAGE_DIR = "C:/Users/Kevin/CSI_4110/final-project/bdd100k/bdd100k/images/100k/train"
+LABEL_PATH = "C:/Users/Kevin/CSI_4110/final-project/labels/det_v2_train_release.json"
 
 # amount of pictures going through in one batch
-batch_size = 64
+batch_size = 8
 
 # defining transformations to convert PIL img's (an image in memory)
 # to Tensors
 transform = transforms.Compose([
+    transforms.Resize((256, 256)),  # makes images smaller & faster
     transforms.ToTensor()
 ])
 
 # Create training and test datasets with transformations
 training_data = BDD100KDetectionDataset(IMAGE_DIR, LABEL_PATH, transform=transform)
 test_data = BDD100KDetectionDataset(IMAGE_DIR, LABEL_PATH, transform=transform)
+# Limit dataset size for faster testing
+training_data.data = training_data.data[:512]
+test_data.data = test_data.data[:128]
 
 # Create DataLoaders with the custom collate function
 train_dataloader = DataLoader(training_data, batch_size=batch_size, shuffle=True, collate_fn=collate_fn)
