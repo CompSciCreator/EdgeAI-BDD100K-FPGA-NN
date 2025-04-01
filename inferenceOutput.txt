@@ -1,0 +1,7 @@
+Loaded checkpoint: model_epoch_10.pth
+Running inference and visualization on test set...
+
+Image 1 Predictions:
+Object 1: rider
+  Box: [0.0, 15.6, 142.3, 196.4]
+  Confidence: 0.52
