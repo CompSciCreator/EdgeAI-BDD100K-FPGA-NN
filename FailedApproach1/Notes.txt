@@ -1,0 +1,3 @@
+Trained a designed a custom Convolutional Neural Network (CNN) to detect multiple object classes from the BDD100K dataset. 
+However, the model failed to generalize and could only detect objects from a single class, along with issues related to anchor box configuration, 
+grid sizing, loss functions
