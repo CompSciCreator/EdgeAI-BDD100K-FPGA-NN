@@ -1,0 +1,92 @@
+Initial annotations: 69863
+Discovered images: 70000
+Valid annotations after filtering: 69863
+Initial annotations: 10000
+Discovered images: 10000
+Valid annotations after filtering: 10000
+Total samples in training set: 69863
+Total samples in test set: 10000
+Unique labels: 10
+Labels: ['pedestrian', 'rider', 'car', 'truck', 'bus', 'train', 'motorcycle', 'bicycle', 'traffic light', 'traffic sign']
+Using device: cuda
+Epoch 1/50 | Batch 0/250 | Loss: 6.3021 (Box: 0.8777, Obj: 3.2370, Cls: 2.1874)
+Epoch 1/50 | Batch 50/250 | Loss: 1.4814 (Box: 0.0608, Obj: 0.7082, Cls: 0.7124)
+Epoch 1/50 | Batch 100/250 | Loss: 1.2917 (Box: 0.0438, Obj: 0.7177, Cls: 0.5302)
+Epoch 1/50 | Batch 150/250 | Loss: 0.9132 (Box: 0.0423, Obj: 0.5340, Cls: 0.3368)
+Epoch 1/50 | Batch 200/250 | Loss: 1.1180 (Box: 0.0457, Obj: 0.6083, Cls: 0.4641)
+Epoch 2/50 | Batch 0/250 | Loss: 1.0874 (Box: 0.0368, Obj: 0.5476, Cls: 0.5030)
+Epoch 2/50 | Batch 50/250 | Loss: 0.7593 (Box: 0.0248, Obj: 0.4135, Cls: 0.3209)
+Epoch 2/50 | Batch 100/250 | Loss: 1.1733 (Box: 0.0668, Obj: 0.6731, Cls: 0.4334)
+Epoch 2/50 | Batch 150/250 | Loss: 0.8302 (Box: 0.0290, Obj: 0.4166, Cls: 0.3846)
+Epoch 2/50 | Batch 200/250 | Loss: 0.9143 (Box: 0.0245, Obj: 0.5044, Cls: 0.3854)
+Epoch 3/50 | Batch 0/250 | Loss: 0.8511 (Box: 0.0328, Obj: 0.4570, Cls: 0.3614)
+Epoch 3/50 | Batch 50/250 | Loss: 0.7031 (Box: 0.0226, Obj: 0.4180, Cls: 0.2625)
+Epoch 3/50 | Batch 100/250 | Loss: 0.7550 (Box: 0.0249, Obj: 0.3509, Cls: 0.3792)
+Epoch 3/50 | Batch 150/250 | Loss: 0.7302 (Box: 0.0292, Obj: 0.3447, Cls: 0.3562)
+Epoch 3/50 | Batch 200/250 | Loss: 0.6722 (Box: 0.0239, Obj: 0.3445, Cls: 0.3038)
+Epoch 4/50 | Batch 0/250 | Loss: 0.5993 (Box: 0.0219, Obj: 0.3356, Cls: 0.2418)
+Epoch 4/50 | Batch 50/250 | Loss: 0.6570 (Box: 0.0264, Obj: 0.3849, Cls: 0.2457)
+Epoch 4/50 | Batch 100/250 | Loss: 0.6977 (Box: 0.0178, Obj: 0.2993, Cls: 0.3806)
+Epoch 4/50 | Batch 150/250 | Loss: 0.7303 (Box: 0.0215, Obj: 0.4376, Cls: 0.2712)
+Epoch 4/50 | Batch 200/250 | Loss: 0.6965 (Box: 0.0232, Obj: 0.3527, Cls: 0.3206)
+Epoch 5/50 | Batch 0/250 | Loss: 0.5746 (Box: 0.0185, Obj: 0.2847, Cls: 0.2714)
+Epoch 5/50 | Batch 50/250 | Loss: 0.4559 (Box: 0.0173, Obj: 0.2311, Cls: 0.2075)
+Epoch 5/50 | Batch 100/250 | Loss: 0.6293 (Box: 0.0194, Obj: 0.3515, Cls: 0.2584)
+Epoch 5/50 | Batch 150/250 | Loss: 0.5658 (Box: 0.0178, Obj: 0.3160, Cls: 0.2319)
+Epoch 5/50 | Batch 200/250 | Loss: 0.4880 (Box: 0.0157, Obj: 0.2539, Cls: 0.2184)
+
+Validation Loss: 1.0617
+--------------------------------------------------
+Epoch 6/50 | Batch 0/250 | Loss: 0.6177 (Box: 0.0181, Obj: 0.3163, Cls: 0.2832)
+Epoch 6/50 | Batch 50/250 | Loss: 0.5336 (Box: 0.0166, Obj: 0.2513, Cls: 0.2658)
+Epoch 6/50 | Batch 100/250 | Loss: 0.5024 (Box: 0.0175, Obj: 0.2359, Cls: 0.2490)
+Epoch 6/50 | Batch 150/250 | Loss: 0.4896 (Box: 0.0147, Obj: 0.2668, Cls: 0.2080)
+Epoch 6/50 | Batch 200/250 | Loss: 0.6263 (Box: 0.0230, Obj: 0.3475, Cls: 0.2559)
+Epoch 7/50 | Batch 0/250 | Loss: 0.4707 (Box: 0.0216, Obj: 0.2608, Cls: 0.1884)
+Epoch 7/50 | Batch 50/250 | Loss: 0.5223 (Box: 0.0172, Obj: 0.2536, Cls: 0.2515)
+Epoch 7/50 | Batch 100/250 | Loss: 0.6253 (Box: 0.0265, Obj: 0.2983, Cls: 0.3005)
+Epoch 7/50 | Batch 150/250 | Loss: 0.5365 (Box: 0.0185, Obj: 0.2268, Cls: 0.2912)
+Epoch 7/50 | Batch 200/250 | Loss: 0.4883 (Box: 0.0162, Obj: 0.2722, Cls: 0.1999)
+Epoch 8/50 | Batch 0/250 | Loss: 0.3881 (Box: 0.0150, Obj: 0.2208, Cls: 0.1523)
+Epoch 8/50 | Batch 50/250 | Loss: 0.3912 (Box: 0.0138, Obj: 0.2454, Cls: 0.1321)
+Epoch 8/50 | Batch 100/250 | Loss: 0.5059 (Box: 0.0147, Obj: 0.2083, Cls: 0.2829)
+Epoch 8/50 | Batch 150/250 | Loss: 0.3822 (Box: 0.0144, Obj: 0.2096, Cls: 0.1582)
+Epoch 8/50 | Batch 200/250 | Loss: 0.4868 (Box: 0.0224, Obj: 0.2581, Cls: 0.2062)
+Epoch 9/50 | Batch 0/250 | Loss: 0.3713 (Box: 0.0130, Obj: 0.2243, Cls: 0.1340)
+Epoch 9/50 | Batch 50/250 | Loss: 0.3405 (Box: 0.0205, Obj: 0.1899, Cls: 0.1301)
+Epoch 9/50 | Batch 100/250 | Loss: 0.3946 (Box: 0.0194, Obj: 0.1980, Cls: 0.1772)
+Epoch 9/50 | Batch 150/250 | Loss: 0.4289 (Box: 0.0142, Obj: 0.2534, Cls: 0.1613)
+Epoch 9/50 | Batch 200/250 | Loss: 0.4940 (Box: 0.0204, Obj: 0.2393, Cls: 0.2343)
+Epoch 10/50 | Batch 0/250 | Loss: 0.3377 (Box: 0.0140, Obj: 0.2069, Cls: 0.1169)
+Epoch 10/50 | Batch 50/250 | Loss: 0.3036 (Box: 0.0175, Obj: 0.1762, Cls: 0.1099)
+Epoch 10/50 | Batch 100/250 | Loss: 0.2795 (Box: 0.0169, Obj: 0.1695, Cls: 0.0931)
+Epoch 10/50 | Batch 150/250 | Loss: 0.3779 (Box: 0.0174, Obj: 0.1806, Cls: 0.1799)
+Epoch 10/50 | Batch 200/250 | Loss: 0.4040 (Box: 0.0160, Obj: 0.2250, Cls: 0.1630)
+
+Validation Loss: 1.2500
+--------------------------------------------------
+Epoch 11/50 | Batch 0/250 | Loss: 0.3141 (Box: 0.0190, Obj: 0.2000, Cls: 0.0951)
+Epoch 11/50 | Batch 50/250 | Loss: 0.3982 (Box: 0.0144, Obj: 0.2074, Cls: 0.1764)
+Epoch 11/50 | Batch 100/250 | Loss: 0.2035 (Box: 0.0193, Obj: 0.1354, Cls: 0.0488)
+Epoch 11/50 | Batch 150/250 | Loss: 0.2489 (Box: 0.0120, Obj: 0.1657, Cls: 0.0712)
+Epoch 11/50 | Batch 200/250 | Loss: 0.2570 (Box: 0.0082, Obj: 0.1356, Cls: 0.1131)
+Epoch 12/50 | Batch 0/250 | Loss: 0.2106 (Box: 0.0097, Obj: 0.1256, Cls: 0.0753)
+Epoch 12/50 | Batch 50/250 | Loss: 0.1990 (Box: 0.0086, Obj: 0.1269, Cls: 0.0635)
+Epoch 12/50 | Batch 100/250 | Loss: 0.1993 (Box: 0.0114, Obj: 0.1188, Cls: 0.0691)
+Epoch 12/50 | Batch 150/250 | Loss: 0.1735 (Box: 0.0108, Obj: 0.1089, Cls: 0.0538)
+Epoch 12/50 | Batch 200/250 | Loss: 0.1847 (Box: 0.0111, Obj: 0.1234, Cls: 0.0502)
+Epoch 13/50 | Batch 0/250 | Loss: 0.1584 (Box: 0.0097, Obj: 0.1185, Cls: 0.0302)
+Epoch 13/50 | Batch 50/250 | Loss: 0.1492 (Box: 0.0080, Obj: 0.0939, Cls: 0.0474)
+Epoch 13/50 | Batch 100/250 | Loss: 0.1315 (Box: 0.0119, Obj: 0.0935, Cls: 0.0261)
+Epoch 13/50 | Batch 150/250 | Loss: 0.1364 (Box: 0.0138, Obj: 0.0893, Cls: 0.0333)
+Epoch 13/50 | Batch 200/250 | Loss: 0.1612 (Box: 0.0144, Obj: 0.1090, Cls: 0.0379)
+Epoch 14/50 | Batch 0/250 | Loss: 0.1149 (Box: 0.0090, Obj: 0.0758, Cls: 0.0301)
+Epoch 14/50 | Batch 50/250 | Loss: 0.1179 (Box: 0.0116, Obj: 0.0765, Cls: 0.0298)
+Epoch 14/50 | Batch 100/250 | Loss: 0.1292 (Box: 0.0083, Obj: 0.0781, Cls: 0.0428)
+Epoch 14/50 | Batch 150/250 | Loss: 0.1255 (Box: 0.0097, Obj: 0.0853, Cls: 0.0305)
+Epoch 14/50 | Batch 200/250 | Loss: 0.1477 (Box: 0.0089, Obj: 0.1022, Cls: 0.0366)
+Epoch 15/50 | Batch 0/250 | Loss: 0.1247 (Box: 0.0091, Obj: 0.0832, Cls: 0.0325)
+Epoch 15/50 | Batch 50/250 | Loss: 0.0971 (Box: 0.0098, Obj: 0.0699, Cls: 0.0174)
+Epoch 15/50 | Batch 100/250 | Loss: 0.1526 (Box: 0.0113, Obj: 0.1091, Cls: 0.0323)
+Epoch 15/50 | Batch 150/250 | Loss: 0.1281 (Box: 0.0137, Obj: 0.0832, Cls: 0.0312)
+Epoch 15/50 | Batch 200/250 | Loss: 0.1064 (Box: 0.0098, Obj: 0.0757, Cls: 0.0209)

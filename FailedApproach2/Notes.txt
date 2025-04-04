@@ -1,0 +1,20 @@
+Key Issues Identified: (YOLOv8 model with ResNet50 (pre-trained))
+
+1)Resolution: Currently trained model at 256×256 for edge efficiency but YOLOv8 (and similar models) are typically trained at 640x640 by default for optimal performance.
+
+BDD100K's complex scenes (small objects, overlapping instances) lose critical details at lower resolutions (256x256 image size)
+
+Small objects (traffic signs, pedestrians) become harder to detect (can be seen in prediction and ground-truth images)
+
+
+2) Anchor Mismatch:  Default anchors were designed for 640×640 but used with 256×256 images, causing inaccurate bounding box predictions and poor alignment between predicted and ground-truth boxes.
+
+
+3) Class Imbalance:  Small objects (traffic signs/lights) dominate the dataset over large objects (trucks/buses). The model biases toward smaller bounding boxes during training.
+
+
+4) Edge Deployment Constraints: 
+
+640×640 may be computationally expensive for FPGAs/low-power devices.
+
+256×256 was chosen for efficiency but sacrifices accuracy.

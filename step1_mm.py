@@ -6,8 +6,6 @@ from torchvision import transforms
 import json
 import os
 from PIL import Image
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 
 class BDD100KDetectionDataset(Dataset):
     def __init__(self, image_dir, label_path, transform=None):
@@ -30,30 +28,18 @@ class BDD100KDetectionDataset(Dataset):
         image_path, annotations = self.data[idx]
         # Load image without conversion first to get original size
         original_image = Image.open(image_path)
-        original_width, original_height = original_image.size
-        
         # Convert to RGB for processing
         image = original_image.convert("RGB")
         
         if self.transform:
             image = self.transform(image)
 
-        # Get new resized image dimensions (defined in transforms.Resize)
-        new_width, new_height = 256, 256  
-        scale_x = new_width / original_width
-        scale_y = new_height / original_height
-
         boxes = []
         labels = []
         for ann in annotations:
             bbox = ann.get('box2d', {})
             if bbox:
-                # Rescale bounding box coordinates
-                x1 = bbox['x1'] * scale_x
-                y1 = bbox['y1'] * scale_y
-                x2 = bbox['x2'] * scale_x
-                y2 = bbox['y2'] * scale_y
-                boxes.append([x1, y1, x2, y2])
+                boxes.append([bbox['x1'], bbox['y1'], bbox['x2'], bbox['y2']])
                 labels.append(ann.get('category', 'unknown'))
 
         return image, {
@@ -93,31 +79,12 @@ test_data.data = test_data.data[:128]
 train_dataloader = DataLoader(training_data, batch_size=batch_size, shuffle=True, collate_fn=collate_fn)
 test_dataloader = DataLoader(test_data, batch_size=batch_size, shuffle=False, collate_fn=collate_fn)
 
-# Print information
+# Print requested information
 print(f"Total samples in training set: {len(training_data)}")
 print(f"Total samples in test set: {len(test_data)}")
 print(f"Resized image size: 256x256 (defined in transforms.Resize)")
 
-
-# Function to display a sample image with bounding boxes
-def show_sample_with_boxes(image, target):
-    fig, ax = plt.subplots(1, figsize=(8, 8))
-    image_np = image.permute(1, 2, 0).numpy()  # Convert tensor to numpy for display
-    ax.imshow(image_np)
-
-    for box, label in zip(target['boxes'], target['labels']):
-        x1, y1, x2, y2 = box.tolist()
-        width, height = x2 - x1, y2 - y1
-        rect = patches.Rectangle((x1, y1), width, height, linewidth=2, edgecolor='r', facecolor='none')
-        ax.add_patch(rect)
-        ax.text(x1, y1 - 5, label, color='white', fontsize=12, bbox=dict(facecolor='red', alpha=0.5))
-
-    plt.axis("off")
-    plt.show()
-
-
-
-# Get first batch & display sample
+# Get detailed information from first batch
 for X, y in test_dataloader:
     print(f"\nBatch information:")
     print(f"Number of images in batch: {len(X)}")
@@ -135,7 +102,5 @@ for X, y in test_dataloader:
         print(f"Object {i+1}:")
         print(f"  Category: {label}")
         print(f"  Box coordinates: {box.tolist()}")
-
-    show_sample_with_boxes(X[0], y[0])  # Show first image with bounding boxes
     break
 
