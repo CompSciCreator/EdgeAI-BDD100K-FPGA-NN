@@ -1,0 +1,2 @@
+Currently working on training a YOLO model directly from Ultralytics' using a pre-trained backbone (e.g.,YOLOv8) and fine-tuning it on a BDD!00k dataset with default hyperparameters. 
+The goal is to establish a working baseline before optimizing performance further
