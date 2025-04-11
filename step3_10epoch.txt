@@ -1,0 +1,61 @@
+Epoch 1
+Accuracy: 26.7961
+Avg class loss: 2.221049
+Avg box loss: 178.020602
+
+Epoch 2
+Accuracy: 27.8058
+Avg class loss: 2.131674
+Avg box loss: 153.529162
+
+Epoch 3
+Accuracy: 27.1068
+Avg class loss: 2.060381
+Avg box loss: 143.170614
+
+Epoch 4
+Accuracy: 27.0291
+Avg class loss: 1.992370
+Avg box loss: 136.505942
+
+Epoch 5
+Accuracy: 26.7573
+Avg class loss: 1.982939
+Avg box loss: 133.963676
+
+Epoch 6
+Accuracy: 26.0583
+Avg class loss: 1.966372
+Avg box loss: 134.143956
+
+Epoch 7
+Accuracy: 26.7184
+Avg class loss: 1.962011
+Avg box loss: 133.008152
+
+Epoch 8
+Accuracy: 27.3786
+Avg class loss: 1.967289
+Avg box loss: 132.829698
+
+Epoch 9
+Accuracy: 26.7573
+Avg class loss: 1.973094
+Avg box loss: 133.243840
+
+Epoch 10
+Accuracy: 27.8058
+Avg class loss: 1.955926
+Avg box loss: 132.117570
+
+Epoch 11
+Accuracy: 27.6505
+Avg class loss: 1.960322
+Avg box loss: 132.661291
+
+Epoch 12
+Accuracy: 27.3010
+Avg class loss: 1.966798
+Avg box loss: 133.223724
+
+Total time: 0:04:10.294411
