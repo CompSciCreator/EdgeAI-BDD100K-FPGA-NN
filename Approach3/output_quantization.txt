@@ -1,0 +1,107 @@
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+
+[VAIQ_NOTE]: Loading NNDCT kernels...
+
+0: 640x640 1 pedestrian, 4 cars, 3 traffic signs, 234.1ms
+Speed: 0.0ms preprocess, 234.1ms inference, 1.5ms postprocess per image at shape (1, 3, 640, 640)
+Number of detections: 8
+Box coordinates shape: torch.Size([8, 4])
+Confidences shape: torch.Size([8])
+Class IDs shape: torch.Size([8])
+Predicted class IDs (after confidence filter): tensor([2., 2., 2., 0., 9., 9.])
+Predicted class IDs (after validity filter): tensor([2., 2., 2., 0., 9., 9.])
+Original model predictions:
+car: 89.61%
+car: 87.71%
+car: 79.49%
+pedestrian: 75.20%
+traffic sign: 37.11%
+Press Enter to continue...
+Loaded /workspace/bdd100k_yolo_640/images/train/07bfc572-8c9c821c.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/01d3a4d7-7940d3f0.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0f392858-35a3011a.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0953d649-90719966.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/092c9382-26c1ce10.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/06ea2cc4-ed1cdbdd.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0d6b7f11-7c2e595b.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/02d5e1be-66fb59af.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0133af9c-8a890e5d.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/10a18a70-851b463c.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/09fc7779-a40fa3c6.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/003c4a61-52588960.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/05e61937-4d3e06ad.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0b91b26d-2d0f5e80.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/06d937fd-1fb41da3.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/06939285-f98cafe6.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/072c1503-eb85b76d.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/10bd263e-adb5a5d3.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/08ac23b4-2031c61b.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/09f23136-817bff87.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/009215e2-d6d2d61b.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0fdfe87a-1ceea931.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0320e1b6-18e26ab2.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/08691778-45ea790a.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0ae23c7b-5e692931.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/04d99a06-b17c00d8.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0a798437-6ee21fed.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0567d1d8-964cb61c.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/050b5f87-114a79ab.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/097450c5-87ec5fcf.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0bbd0cc8-ffb798a5.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0c85ac7b-ba0cc91c.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/074496ba-c293cfe9.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/021df36f-9dc059b8.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/066ec59d-544e7021.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0f03c7b1-247629c8.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/04813e1a-2c97056a.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/013ae324-36be6bc2.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0a800f65-b2f82256.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0aadb8cc-ca9127fe.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0399d2ac-9bffb35b.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/097650e5-433d4bdc.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/050e2e1a-849d67d4.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/06311321-b7db9a66.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/0bd785cc-de69b433.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/065b4523-1e738c93.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/08ba6888-182f3529.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/02b1ab3d-e93996c2.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/10af4b8b-cf6e8138.jpg
+Loaded /workspace/bdd100k_yolo_640/images/train/06362178-47048147.jpg
+
+[VAIQ_WARN]: CUDA is not available, change device to CPU
+
+[VAIQ_NOTE]: Quant config file is empty, use default quant configuration
+
+[VAIQ_NOTE]: Quantization calibration process start up...
+
+[VAIQ_NOTE]: =>Quant Module is in 'cpu'.
+
+[VAIQ_NOTE]: =>Parsing DetectionModel...
+
+[VAIQ_NOTE]: Start to trace model...
+/home/vitis-ai-user/.local/lib/python3.7/site-packages/ultralytics/nn/modules/head.py:50: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  elif self.dynamic or self.shape != shape:
+/home/vitis-ai-user/.local/lib/python3.7/site-packages/ultralytics/utils/tal.py:251: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  for i, stride in enumerate(strides):
+
+[VAIQ_NOTE]: Finish tracing.
+
+[VAIQ_NOTE]: Processing ops...
+██████████████████████████████████████████████████| 234/234 [00:00<00:00, 1490.56it/s, OpInfo: name = return_0, 
+
+[VAIQ_WARN]: The quantizer recognize new op `aten::split_with_sizes` as a float operator by default.
+
+[VAIQ_WARN]: The quantizer recognize new op `aten::meshgrid` as a float operator by default.
+
+[VAIQ_WARN]: The quantizer recognize new op `aten::silu_` as a float operator by default.
+
+[VAIQ_WARN]: The quantizer recognize new op `stack` as a float operator by default.
+
+[VAIQ_WARN]: The quantizer recognize new op `aten::full` as a float operator by default.
+
+[VAIQ_NOTE]: =>Doing weights equalization...
+
+[VAIQ_NOTE]: =>Quantizable module is generated.(quantize_result/DetectionModel.py)
+
+[VAIQ_NOTE]: =>Get module with quantization.
+Error running quantized model: 'tuple' object has no attribute 'values'
