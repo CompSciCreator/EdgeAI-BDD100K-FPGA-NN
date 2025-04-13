@@ -1,0 +1,5 @@
+Epoch 1
+Accuracy: 37.5000
+Avg loss: 1.520201
+
+Total time: 0:00:16.521640
