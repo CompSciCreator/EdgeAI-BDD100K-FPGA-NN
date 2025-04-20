@@ -1,0 +1,2 @@
+Code adopted from https://github.com/LogicTronix/Vitis-AI-Reference-Tutorials/tree/main/Quantizing-Compiling-Yolov5-Hackster-Tutorial
+fixed shape mismatch erros between model feature output and detection  

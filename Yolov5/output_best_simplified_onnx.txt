@@ -1,0 +1,16 @@
+Simplifying...
+Finish! Here is the difference:
++------------------------------------------------+
+|            | Original Model | Simplified Model |
+|------------+----------------+------------------|
+| Add        | 7              | 7                |
+| Concat     | 13             | 13               |
+| Constant   | 125            | 124              |
+| Conv       | 60             | 60               |
+| LeakyRelu  | 57             | 57               |
+| MaxPool    | 3              | 3                |
+| Reshape    | 3              | 3                |
+| Resize     | 2              | 2                |
+| Transpose  | 3              | 3                |
+| Model Size | 26.9MiB        | 26.9MiB          |
++------------------------------------------------+
